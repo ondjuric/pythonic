@@ -1,0 +1,16 @@
+Polymorphism is the quality of being able to treat different types of things the same
+and have those things each react in their own way.
+
+[x] Used in the context of OOP, Polymorphism means that you can send the same message to
+objects of different classes related by inheritance and achieve different and appropriate
+results.
+
+In our example:
+---------------
+UnprintableCard is derived from Card, and when you invoke the __str__() method of an
+UnprintableCard object, you get a different result than when you invoke the __str__()
+method of a Card object.
+The result of this Polymorphic behaviour is that you can print an object even if you
+don't know whether it's an UnprintableCard or a Card object. Regardless of the class
+of the object, when printed, its __str__() method is invoked and the correct string
+representation of it is displayed.
